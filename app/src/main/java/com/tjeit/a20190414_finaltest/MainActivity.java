@@ -35,14 +35,14 @@ public class MainActivity extends AppCompatActivity {
 //              1)입력된 키가 몇인지 소수점으로 저장
 //                1.1)heightEdt에 입력 된 값을 일단string 으로 뽑아자
                 String heightStr = heightEdt.getText().toString();
-//                1.2 따낸  String을 double형태 변환.
+//                1.2) 따낸  String을 double형태 변환.
                 double height = Double.parseDouble(heightStr);
-
+//                 1.3) 따낸  String을 double형태 변환.
                 String weightStr = WeightEdt.getText().toString();
                 double weight = Double.parseDouble(weightStr);
 
 
-//                2)
+//                2) 인텐트를 만들고, 따낸 몸무게와 키 첨부
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                 intent.putExtra("키", height);
                 intent.putExtra("몸무게", weight);
